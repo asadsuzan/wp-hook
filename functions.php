@@ -30,5 +30,10 @@ function change_paragraph($default){
 add_filter("paragraph_filter","change_paragraph");
 
 
+function uppercase_des($description){
+    return strtoupper($description);
+};
+
+add_filter("the_description","uppercase_des");
 
 ?>
