@@ -23,6 +23,12 @@ function html_head_func($title){
 <?php
 };
 
+function change_paragraph($default){
+    return "the " . $default . "is modified" ;
+};
+
+add_filter("paragraph_filter","change_paragraph");
+
 
 
 ?>

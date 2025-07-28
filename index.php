@@ -2,5 +2,7 @@
 <body>
     
 <h1><?php do_action("test_action");?></h1>
+
+<p><? echo apply_filters("paragraph_filter","default paragraph content")?></p>
 </body>
 </html>
